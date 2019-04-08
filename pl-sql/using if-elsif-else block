@@ -1,0 +1,14 @@
+set serveroutput on;
+declare
+v varchar(20):='bob';
+begin
+if v='bob' then
+dbms_output.put_line('u r right value is '||v||' i am inside if block');
+elsif v='raj' then
+dbms_output.put_line('u r wrong value is '||v||' i am inside elsif block');
+else
+dbms_output.put_line('u r wrong value is '||v||' i am inside else block');
+end if;
+dbms_output.put_line('i am outside if block');
+end;
+/
