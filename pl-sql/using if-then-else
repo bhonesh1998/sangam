@@ -1,0 +1,12 @@
+set serveroutput on;
+declare
+v number :=1;
+begin
+if v=1 then
+dbms_output.put_line('u r right value is '||v||' i am inside if block');
+else
+dbms_output.put_line('u r wrong value is '||v||' i am inside else block');
+end if;
+dbms_output.put_line('i am outside if block');
+end;
+/
