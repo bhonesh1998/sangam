@@ -1,0 +1,8 @@
+set serveroutput on ;
+declare 
+pi constant number:=3.14;
+begin
+--pi=2; remove comment and u will get an error because u can not change constant
+dbms_output.put_line(pi);
+end;
+/
