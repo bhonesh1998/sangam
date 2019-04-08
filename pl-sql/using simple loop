@@ -1,0 +1,17 @@
+set serveroutput on;
+declare 
+x number :=1;
+res number;
+begin
+loop
+res:=19*x;
+dbms_output.put_line(res);
+x:=x+1;
+if x>10 then
+exit;
+end if;
+end loop;
+
+end;
+/
+
