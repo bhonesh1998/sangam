@@ -1,0 +1,5 @@
+declare 
+x varchar(15):='bhonesh';
+begin
+dbms_output.put_line(x);
+end;
