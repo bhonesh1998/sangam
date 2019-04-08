@@ -1,0 +1,19 @@
+drop table my;
+create table my(
+salary int,
+id int
+);
+
+insert into my values(100,10);
+insert into my values(1000,20);
+
+select * from my;
+
+set serveroutput on;
+declare 
+c number:=0;
+begin
+select salary into c from my where id=10;
+dbms_output.put_line(c);
+end;
+/
