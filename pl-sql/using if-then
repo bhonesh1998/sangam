@@ -1,0 +1,10 @@
+set serveroutput on;
+declare
+v number :=1;
+begin
+if v=1 then
+dbms_output.put_line('i am inside if block');
+end if;
+dbms_output.put_line('i am outside if block');
+end;
+/
